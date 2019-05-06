@@ -1,0 +1,21 @@
+<app-module-layout title="Заказы на закупку">
+
+<div class="row">
+  <div class="col-2">
+    <img src="stopka.png" height="180px" />
+  </div>
+  <div class="col-10">
+
+    <div class="card mb-3 shadow-sm" *ngFor="let obj of data$ | async"
+    [routerLink]="['/orders', obj.tov_id]" routerLinkActive="router-link-active"
+    >
+        <div class="card-body">
+            {{ obj.name }}.
+        </div>
+    </div>
+
+
+  </div>
+</div>
+
+</app-module-layout>

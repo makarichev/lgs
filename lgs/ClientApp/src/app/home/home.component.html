@@ -1,0 +1,107 @@
+<div class="container">
+  <div class="card-deck mb-3">
+    <div class="card" [routerLink]="['/orders']" style="cursor:pointer">
+      <img class="card-img-top" src="stopka.png" height="200" />
+      <div class="card-body">
+        <h5 class="card-title">Заказы на закупку</h5>
+        <p class="card-text">
+          Рабочее место МЗ. Обработка заказов. Cоздание заказов на расчёт цены,
+          инвойсов ...
+        </p>
+      </div>
+    </div>
+
+    <div class="card" [routerLink]="['/invoices']" style="cursor:pointer">
+      <img class="card-img-top" src="invoice.png" height="200" />
+      <div class="card-body">
+        <h5 class="card-title">Инвойсы</h5>
+        <p class="card-text">Работа с инвойсами поставщиков</p>
+      </div>
+    </div>
+
+    <div class="card" [routerLink]="['/prices']" style="cursor:pointer">
+      <img class="card-img-top" src="prices.jpg" height="200" />
+      <div class="card-body">
+        <h5 class="card-title">Заявки на расчёт цены</h5>
+        <p class="card-text">
+          Расчёт транспортной и таможенной составляющей закупки
+        </p>
+      </div>
+    </div>
+
+    <div class="card" [routerLink]="['/transport']" style="cursor:pointer">
+      <img class="card-img-top" src="container.png" height="200" />
+      <div class="card-body">
+        <h5 class="card-title">Транспорт</h5>
+        <p class="card-text">
+          Расчёт транспортной составляющей закупки
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-deck mb-3">
+    <div class="card" [routerLink]="['/customs']" style="cursor:pointer">
+      <img class="card-img-top" src="custom.jpg" height="200" />
+
+      <div class="card-body">
+        <h5 class="card-title">Таможенное оформление</h5>
+        <p class="card-text">
+          Расчёт таможенной составляющей закупки
+        </p>
+      </div>
+    </div>
+
+    <div class="card" [routerLink]="['/stocks']" style="cursor:pointer">
+      <img class="card-img-top" src="bunk.jpg" height="200" />
+      <div class="card-body">
+        <h5 class="card-title">Складская приёмка</h5>
+        <p class="card-text">
+          Приём товара на складе
+        </p>
+      </div>
+    </div>
+
+    <div class="card" [routerLink]="['/costs']" style="cursor:pointer">
+      <img class="card-img-top" src="cast.jpg" height="200" />
+      <div class="card-body">
+        <h5 class="card-title">Расчёт себестоимости</h5>
+        <p class="card-text">
+          Расчёт себестоимости закупки
+        </p>
+      </div>
+      <div class="card"></div>
+
+    </div>
+
+  </div>
+  <div class="card-deck">
+    <div class="card" [routerLink]="['/vendors']" style="cursor:pointer">
+      <img class="card-img-top" src="vendors.png" height="200" />
+      <div class="card-body">
+        <h5 class="card-title">Поставщики</h5>
+        <p class="card-text"></p>
+      </div>
+    </div>
+
+    <div class="card" [routerLink]="['/go']" style="cursor:pointer">
+      <img class="card-img-top" src="go.png" height="200" />
+      <div class="card-body">
+        <h5 class="card-title">График отгрузок</h5>
+        <p class="card-text"></p>
+      </div>
+    </div>
+    <div class="card" [routerLink]="['/admin']" style="cursor:pointer">
+      <img class="card-img-top" src="admin.jpg" height="200" />
+      <div class="card-body">
+        <h5 class="card-title">Администрирование</h5>
+        <p class="card-text">
+          Управление ролями, администрирование регламентов.
+        </p>
+      </div>
+    </div>
+
+    <div class="card"></div>
+
+  </div>
+</div>
